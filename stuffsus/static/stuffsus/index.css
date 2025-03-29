@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif; 
+}
+
+.hero{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 6%;
+    background-image: url('images/storehrbkgd.jpeg');
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.hero nav{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-self: center;
+    background-color: white;
+    align-items: center;
+}
+
+.hero nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.hero nav ul li{
+    padding: 10px;
+    font-size: 1.2em;
+    color: black;
+}
+
+.hero nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.hero nav ul li a:hover, .hero nav ul li a.active{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.top{
+    border-radius: 0 0 10px 10px;
+}
+
+.bottom{
+    border-radius: 10px 10px 0 0;
+}
+
+.bottom input{
+    background-color: transparent;
+    padding: 10px;
+    width: 250px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+
+.bottom button{
+    padding:  10px;
+    background-color: black;
+    border: none;
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(252, 249, 244);
+    border-radius: 10px;
+}
+
+.bottom h3{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.top img{
+    width: 100px;
+}
+
+.Dashboard img{
+    width: 20px;
+}
+
+.Dashboard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+}

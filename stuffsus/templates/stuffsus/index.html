@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuffsus</title>
+    <link rel="stylesheet" href="{% static 'stuffsus/index.css' %}">
+</head>
+<body>
+    <header class='hero'>
+        <nav class="top">
+            <img src="{% static 'stuffsus/images/logo.png' %}" alt="StuffsusLogo"/>
+            <ul>
+                <li><a href=# >Bernada</a></li>
+                <li><a href=# >Shop</a></li>
+                <li><a href=# >Blog</a></li>
+            </ul>
+            <div class="Dashboard">
+                <img src="{% static 'stuffsus/images/cartblack-shape.png' %}" alt="Cart"/>
+                <img src="{% static 'stuffsus/images/user.png' %}" alt="Profile"/>
+            </div>
+        </nav>
+        <nav class="bottom">
+            <h3>Give All You Need</h3>
+            <div class="search">
+                <input type="text" placeholder="Search on Stuffus"/>
+                <button class="searchbtn">search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <p>This is the homepage of Stuffsus.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Stuffsus. All rights reserved.</p>
+    </footer>
+</body>
+</html>
