@@ -1,11 +1,14 @@
+{% load django_browser_reload %}
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% django_browser_reload_script %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stuffsus</title>
     <link rel="stylesheet" href="{% static 'stuffsus/index.css' %}">
+    <script src="{% static 'stuffsus/script.js' %}"></script>
 </head>
 <body>
     <header class='hero'>
@@ -28,12 +31,50 @@
                 <button class="searchbtn">search</button>
             </div>
         </nav>
+        <h1>Shop</h1>
     </header>
     <main>
-        <p>This is the homepage of Stuffsus.</p>
+
+        <section class="categories">
+            <div class="tree">
+                <h2>Category</h2><br>
+               <select name="AllProducts" id="allproducts">
+                    <option value="All Products">All Products</option>
+                    <option value="For Home">For Home</option>
+                    <option value="For Music">For Music</option>
+                    <option value="For Phone">For Phone</option>
+                    <option value="For Storage">For Storage</option>
+               </select>
+               <div class="newArrivals">
+                    <p><a href="">New Arrivals</a></p>
+               </div>
+               <div class="bestSeller">
+                    <p><a href="">Best Seller</a></p>
+               </div>
+               <div class="onDiscount">
+                    <p><a href="">On Discount</a></p>
+                </div>
+            </div>
+
+            <div class="showcase">
+
+            </div>
+        </section>
+        <section class="numnav">
+
+        </section>
+        <section class="recommendations">
+            <h2>Explore our recommendations</h2>
+        </section>
+        <section class="banner">
+
+        </section>
+
     </main>
     <footer>
         <p>&copy; 2025 Stuffsus. All rights reserved.</p>
     </footer>
+
+    
 </body>
 </html>
