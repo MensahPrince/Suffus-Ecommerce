@@ -57,7 +57,15 @@
             </div>
 
             <div class="showcase">
-
+                {% for product in products %}
+                    <div class="product">
+                        <img src="{{ product.image.url }}" alt="{{ product.name }}" />
+                        <h3>{{ product.name }}</h3>
+                        <p>{{ product.price }}</p>
+                        <button class="addToCart">Add to Cart</button>
+                        <button class="buyNow">Buy Now</button>
+                    </div>
+                {% endfor %}
             </div>
         </section>
         <section class="numnav">

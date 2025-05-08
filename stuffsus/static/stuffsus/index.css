@@ -204,3 +204,8 @@ header h1{
     background: #007bff;
     color: #fff;
 }
+
+footer{
+    text-align: center;
+    justify-content: center;
+}
