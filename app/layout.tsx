@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Search } from "lucide-react"
 import "./globals.css"
 
+
+import SearchBar from "@/components/search"
 export const metadata: Metadata = {
   title: "NetClient App",
   description: "A netflix client app",
@@ -57,7 +59,7 @@ export default function RootLayout({
         </nav>
 
         {/* ===================== */}
-        {/* MAIN NAV (ByteShop) */}
+        {/* MAIN NAV (Stuffus) */}
         {/* ===================== */}
         <nav className="w-full bg-white border-b border-gray-200 px-6 py-3">
 
@@ -68,20 +70,8 @@ export default function RootLayout({
               Stuffus
             </span>
 
-            {/* Search */}
-            <div className="flex flex-1 max-w-xl items-center border border-gray-300 rounded-lg overflow-hidden">
-
-              <input
-                type="text"
-                placeholder="Search products…"
-                className="flex-1 px-3 py-2 text-sm outline-none bg-white"
-              />
-
-              <button className="bg-black text-white text-sm px-4 py-2 hover:bg-gray-800 transition">
-                Search
-              </button>
-
-            </div>
+            {/*Search Bar*/}
+            <SearchBar />
 
             {/* Links */}
             <div className="flex items-center gap-1 ml-auto">

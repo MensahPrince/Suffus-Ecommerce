@@ -37,6 +37,7 @@ export default function HomePage() {
                 width={100}
                 height={100}
                 alt="Card"
+                style={{ height: "auto" }}
                 className="z-5 absolute left-[-20%] bottom-[-10%] rotate-12 hover:scale-105 transition"
               />
               <Image
@@ -44,6 +45,7 @@ export default function HomePage() {
                 alt="Gaming headset"
                 width={240}
                 height={240}
+                loading="eager"
                 style={{ height: "auto" }}
                 className="relative object-contain drop-shadow-md hover:scale-105 transition"
               />
